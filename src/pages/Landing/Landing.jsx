@@ -1,5 +1,7 @@
 import "./Landing.scss";
 import "./assets/Landing-page-image.svg";
+import { GiPartyPopper } from "react-icons/gi";
+
 
 function Landing() {
   return (
@@ -12,7 +14,7 @@ function Landing() {
         <img src="./assets/Landing-page-image.svg" alt="Landing page" />
       </div>
       <div>
-        <button>Create my event</button>
+        <button><GiPartyPopper/>Create my event</button>
       </div>
     </>
   );

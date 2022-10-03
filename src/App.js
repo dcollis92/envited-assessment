@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./App.css";
+
+// Components
+import Landing from "./pages/Landing/Landing";
+import EventForm from "./pages/EventForm/EventForm";
+import EventDetails from "./pages/EventDetails/EventDetails";
+
+// Services
 
 function App() {
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await ampService.getAll();
+      setAmps(data);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/create" element={<EventForm />} />
+        <Route path="/event/:id" element={<EventDetails />} />
+        <Route path="/event/:id/edit" element={<EventForm />} />
+      </Routes>
+    </>
   );
 }
 
