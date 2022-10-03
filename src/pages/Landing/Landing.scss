@@ -1,83 +1,142 @@
-.landing-header {
-  position: absolute;
-  width: 283px;
-  height: 108px;
-  left: 19px;
-  top: 0px;
+.landing-page {
+  position: relative;
+  width: 375px;
+  height: 813px;
+  overflow-y: scroll;
 
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
-  /* or 100% */
-  text-align: center;
+  background: #f6f2ff;
 
-  color: #240d57;
+  .heading-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
 
-  .gradient-text {
-    width: 163px;
-    height: 41px;
-    left: 79px;
-    top: 34px;
+    position: absolute;
+    width: 321px;
+    height: 160px;
+    left: calc(50% - 321px / 2);
+    top: 94px;
 
-    background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .heading {
+      width: 283px;
+      height: 108px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+      .snapchat {
+        position: absolute;
+        width: 163px;
+        height: 41px;
+        left: 79px;
+        top: 34px;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center;
+
+        background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .tagline {
+        position: absolute;
+        width: 283px;
+        height: 108px;
+        left: 19px;
+        top: 0px;
+
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        /* or 100% */
+
+        text-align: center;
+
+        color: #240d57;
+      }
+    }
+    .app-description {
+      width: 321px;
+      height: 36px;
+
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+
+      color: #4f4f4f;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
   }
-}
 
-.app-descriotion {
-  width: 321px;
-  height: 36px;
+  .event-card {
+    position: absolute;
+    width: 165.63px;
+    height: 292px;
+    left: calc(50% - 165.63px / 2 + 0.32px);
+    top: 290px;
 
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
+    // background: url(image.png);
+    filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+    border-radius: 13.2326px;
+  }
 
-  color: #4f4f4f;
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
 
-  /* Inside auto layout */
+    position: absolute;
+    width: 187px;
+    height: 50px;
+    left: calc(50% - 187px / 2);
+    top: 616px;
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
+    background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+    border-radius: 10px;
 
-.event-card {
-  position: absolute;
-  width: 165.63px;
-  height: 292px;
-  left: calc(50% - 165.63px / 2 + 0.32px);
-  top: 290px;
+    .button-text {
+      width: 145px;
+      height: 18px;
 
-  background: url(image.png);
-  filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
-  border-radius: 13.2326px;
-}
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: right;
 
-.button {
-  width: 145px;
-height: 18px;
+      color: #ffffff;
 
-font-family: 'Helvetica';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 18px;
-text-align: right;
+      /* Inside auto layout */
 
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
 }

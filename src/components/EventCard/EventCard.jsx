@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
-const EventCard = ({ event, eventImages }) => {
+const EventCard = ({ event }) => {
   return (
-    <Link to={`/event/${event.id}`} className="card">
+    <Link to={`/event`} className="card">
       <div className="card-content">
         <div className="card-img-container">
           <img
             className="usr-img"
             src="./assets/landing-page-image.svg"
-            alt={`${event.make} ${event.model}`}
+            alt="landing-page"
           />
         </div>
         <h2 className="card-title">
-          {event.title} - {event.date}
+          My Awesome Event
         </h2>
       </div>
     </Link>
