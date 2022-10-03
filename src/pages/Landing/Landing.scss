@@ -1,0 +1,83 @@
+.landing-header {
+  position: absolute;
+  width: 283px;
+  height: 108px;
+  left: 19px;
+  top: 0px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  /* or 100% */
+  text-align: center;
+
+  color: #240d57;
+
+  .gradient-text {
+    width: 163px;
+    height: 41px;
+    left: 79px;
+    top: 34px;
+
+    background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.app-descriotion {
+  width: 321px;
+  height: 36px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #4f4f4f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.event-card {
+  position: absolute;
+  width: 165.63px;
+  height: 292px;
+  left: calc(50% - 165.63px / 2 + 0.32px);
+  top: 290px;
+
+  background: url(image.png);
+  filter: drop-shadow(0px 0px 17.6435px rgba(0, 0, 0, 0.05));
+  border-radius: 13.2326px;
+}
+
+.button {
+  width: 145px;
+height: 18px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: right;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
