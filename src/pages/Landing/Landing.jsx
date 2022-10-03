@@ -1,7 +1,6 @@
 import "./Landing.scss";
-import "./assets/Landing-page-image.svg";
+// import "./assets/Landing-page-image.svg";
 import { GiPartyPopper } from "react-icons/gi";
-
 
 function Landing() {
   return (
@@ -11,10 +10,17 @@ function Landing() {
         Easily host and share events with your friends across any social media.
       </div>
       <div>
-        <img src="./assets/Landing-page-image.svg" alt="Landing page" />
+        {/* <img
+          className="landing-image"
+          src="./assets/Landing-page-image.svg"
+          alt="Landing page"
+        /> */}
       </div>
       <div>
-        <button><GiPartyPopper/>Create my event</button>
+        <button>
+          <GiPartyPopper />
+          Create my event
+        </button>
       </div>
     </>
   );

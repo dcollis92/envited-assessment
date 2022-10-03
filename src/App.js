@@ -5,7 +5,7 @@ import "./App.css";
 
 // Components
 import Landing from "./pages/Landing/Landing";
-import EventForm from "./pages/EventForm/EventForm";
+import EventForm from "./pages/Forms/EventForm";
 import EventDetails from "./pages/EventDetails/EventDetails";
 import EventDeleteConfirmation from "./pages/EventDeleteConfirmation/EventDeleteConfirmation";
 
