@@ -20,8 +20,11 @@ function EventForm(props) {
     // formData is modeled after SQL backend structure
     const formData = {
       id: form.id,
+      title: form.title,
+      host: form.host,
       date: form.date,
       location: form.location,
+      link: form.link,
       description: form.description,
       comments: form.comments,
       is_attending: form.isAttending === "yes" ? "yes" : "no",
@@ -42,8 +45,11 @@ function EventForm(props) {
       const eventData = data.event;
       setForm({
         id: eventData.id,
+        title: eventData.title,
+        host: eventData.host,
         date: eventData.date,
         location: eventData.location,
+        link: eventData.link,
         description: eventData.description,
         comments: eventData.comments,
       });
@@ -74,6 +80,7 @@ function EventForm(props) {
             Submit
           </button>
         </form>
+
       </section>
     </>
   );
