@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "./EventCard.scss";
 
-const EventCard = ({ event }) => {
+const EventCard = () => {
   return (
-    <Link to={`/event`} className="card">
+    <Link to={"/event"} className="card">
       <div className="card-content">
         <div className="card-img-container">
           <img
@@ -11,9 +12,6 @@ const EventCard = ({ event }) => {
             alt="landing-page"
           />
         </div>
-        <h2 className="card-title">
-          My Awesome Event
-        </h2>
       </div>
     </Link>
   );
