@@ -1,4 +1,4 @@
-/* 
+/*
  * If wanting to use a JWT token, uncomment the following:
  */
 

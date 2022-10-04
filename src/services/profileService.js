@@ -1,4 +1,4 @@
-/* 
+/*
  * If wanting to use a profileService to check against the token Auth, uncomment the following:
  */
 

@@ -6,22 +6,23 @@
 
 ## Accomplishments
 
-
 While the project didn't have a backend to feed information, I still wanted to construct a Frontend that was properly connected to a potential Backend. With this in mind, I have the following stubbed up:
 
 #### `services`
-  - `authService`: providing login/logout functionality while crosschecking the provided Authorization
-  - `profileService`: provide user information for when the user interacts with other profiles
-  - `tokenService`: utilizing JWT functionality for providing the user with an AuthToken
-  - `events`: Featuring all CRUD functionality when interacting with a backend (modeled after PostgreSQL)
+
+- `authService`: providing login/logout functionality while crosschecking the provided Authorization
+- `profileService`: provide user information for when the user interacts with other profiles
+- `tokenService`: utilizing JWT functionality for providing the user with an AuthToken
+- `events`: Featuring all CRUD functionality when interacting with a backend (modeled after PostgreSQL)
 
 #### `Forms`
-  - `EventForm`: to import and set the formData from SQL (title, date, etc.)
-  - `EventInput`: Input functionality for populating these data fields
-  
+
+- `EventForm`: to import and set the formData from SQL (title, date, etc.)
+- `EventInput`: Input functionality for populating these data fields
 
 #### `EventDeleteConfirmation`
-  - While only edit/update functionality was requested, I thought it would field empty to not include the final step in the CRUD functionality
+
+- While only edit/update functionality was requested, I thought it would field empty to not include the final step in the CRUD functionality
 
 ---
 

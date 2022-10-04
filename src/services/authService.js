@@ -1,4 +1,4 @@
-/* 
+/*
  * If wanting to use an Auth token, uncomment the following:
  */
 

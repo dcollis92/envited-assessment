@@ -79,7 +79,6 @@ function EventForm(props) {
             Submit
           </button>
         </form>
-
       </section>
     </>
   );

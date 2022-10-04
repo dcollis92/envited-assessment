@@ -13,7 +13,9 @@ const EventActions = ({ event, user }) => {
             <>
               <button
                 className="btn warn"
-                onClick={() => navigate(`/event/${event.id}/edit`, { state: event })}
+                onClick={() =>
+                  navigate(`/event/${event.id}/edit`, { state: event })
+                }
               >
                 Edit
               </button>
